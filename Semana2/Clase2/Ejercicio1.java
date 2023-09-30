@@ -79,8 +79,8 @@ public class Ejercicio1
             System.out.println(Arrays.toString(vectOrd));
                 
             break;
-            case 'B':
-            case 'b':
+            case 'D':
+            case 'd':
 
             vectOrd[2]=pri;
             vectOrd[1]=seg;
