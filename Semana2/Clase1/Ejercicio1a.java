@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Ejercicio1A 
+public class Ejercicio1a 
 
 {
     
@@ -26,7 +26,7 @@ public class Ejercicio1A
 			}
 				
 		}
-		System.out.println("Se repite la letra " + letra + " en la Palabra " + palabra +" "+ contador + " veces");
+		System.out.println("Se repite la letra " + letra + " en la Palabra " + palabra +" "+ contador + " vez/veces");
 	
 	}
 	

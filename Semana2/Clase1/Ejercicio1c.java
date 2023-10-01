@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Ejercicio1C 
+public class Ejercicio1c 
 {
     public static void  main (String[] args )
     {
