@@ -64,8 +64,13 @@ public class Ejercicio2
                     charaCodif=dictionary.charAt(posFinal);
                     nuevaPalabra += charaCodif;
                 }
+                else if (chara == ' ') 
+                {
+                    nuevaPalabra += ' ';
+                }
                 else
                 {
+
                     nuevaPalabra+=chara;
                 }
                
