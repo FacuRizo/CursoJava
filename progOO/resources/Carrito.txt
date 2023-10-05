@@ -1,0 +1,3 @@
+40	Jabon	123f
+10	Esponja	124f
+100	Chocolate	125f
