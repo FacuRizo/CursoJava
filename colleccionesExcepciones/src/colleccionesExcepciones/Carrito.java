@@ -1,83 +1,78 @@
 package colleccionesExcepciones;
 
+import java.util.ArrayList;
 import java.util.Date;
-
-
-
+import java.util.List;
+	
 
 public class Carrito
 
 {
 
-	private Producto producto1;
-	private Producto producto2;
-	private Producto producto3;
+	private List<Producto> prod;	
 	private Date fechaCompra;
+	private float descuento;
+	//private boolean tieneDescuento;
 	
-	public Carrito (Producto producto1, Producto producto2 , Producto producto3)
+	public Carrito ()
 	{
-		this.producto1=producto1;
-		this.producto2=producto2;
-		this.producto3=producto3;
+		this.prod=new ArrayList<Producto>();
 		this.fechaCompra=new Date();
 		
 	}
-
-	public Producto getProducto1() 
-	{
-		return producto1;
-	}
-
 	
-	public Producto getProducto2() 
+	public float getDescuento()
 	{
-		return producto2;
+		return descuento;
 	}
-
-	
-	public Producto getProducto3()
-	{
-		return producto3;
-	}
-
-
 	public Date getFechaCompra() 
 	{
 		return fechaCompra;
 	}
+	public List<Producto> getProductos()
+	{
+		return prod;
+	}
+	
+	public void setDescuento (float desc)
+	{
+		this.descuento=desc;
+	}
+	
+	public void agregarProducto (Producto producto)
+	{
+		this.prod.add(producto);
+	}
+	public void quitarProducto (Producto producto)
+	{
+		this.prod.remove(producto);
+	}
+	
 
 	
-	
-	public void setProducto1(Producto producto1) 
-	{
-		this.producto1 = producto1;
-	}
-	
-	public void setProducto2(Producto producto2) 
-	{
-		this.producto2 = producto2;
-	}
 
-	public void setProducto3(Producto producto3)
-	{
-		this.producto3 = producto3;
-	}
-
-	public void setFechaCompra(Date fechaCompra) 
-	{
-		this.fechaCompra = fechaCompra;
-	}
+	public float costoFinalSinDesc ()
+	{		
+		 float precioFinal=0;
+		 float precioIndividual=0;
+		 for(Producto prodt:this.prod)
+		 {
+			 precioIndividual=prodt.getPrecio();
+			 precioFinal+=precioIndividual;
+		 }	
+		 
+		 return precioFinal;
+		 
+		 
+	}	
 	
-	public float costoFinal ()
+	public float costoFinalConDesc (float costoFinal)
 	{
-		 //float imp= 1.21f;
-		  
-		 float precio1=this.producto1.getPrecio();
-		 float precio2=this.producto2.getPrecio();
-		 float precio3=this.producto3.getPrecio();
+		 return costoFinal;
 		 
-		 return (precio1+precio2+precio3)/*imp*/;
-		 
-		 
-	}
+	}	
+	
+	
+	
+
 }

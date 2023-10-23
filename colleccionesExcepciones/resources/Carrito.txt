@@ -1,0 +1,5 @@
+40	Jabon	123f
+10	Esponja	124f
+100	Chocolate	125f
+11	Shampoo	126f
+25	Manteca	127f

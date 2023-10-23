@@ -46,7 +46,6 @@ public class Producto
 	{
 		this.precio=precio;
 	}
-}
 	
 	
 	/*public float costoFinal (float IVA)
@@ -55,3 +54,4 @@ public class Producto
 		
 		return (precio * (1+imp));
 	}*/
+}
